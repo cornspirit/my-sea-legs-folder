@@ -1,0 +1,71 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+/*
+rock paper scissors bot 
+maybe do lizard and spock idk
+*/
+int main()
+{
+srand (time(NULL));
+int computer = rand() % 3 + 1;
+int user = 0;
+
+cout << "==================\n";
+cout << "ROCK PAPER SCISSOR\n";
+cout << "==================\n";
+cout << "WHAT IS YOUR INPUT?\n";
+cout << "1) ✊\n";
+cout << "2) ✋\n";
+cout << "3) ✌️\n";
+cin >> user;
+
+if (user > 3)
+	{
+  cout << "invalid input\n";
+  cout << "TRY AGAIN IDIOT\n";
+  cin >> user;
+	}
+else
+	{
+  if (user == computer)
+  	{
+    cout << "ur moms a hoe and u tied\n";
+  	}
+  else if (user == 1 && computer == 2)
+  	{
+    cout << "computer chose paper \n";
+    cout << "computer wins\n";
+    cout << "(and ur gay)\n";
+  	}
+  else if (user == 1 && computer == 3)
+  	{
+    cout << "computer chose scissor \n";
+    cout << "user wins\n";
+  	}
+    //*************************************************** user picks paper
+  else if (user == 2 && computer == 1)
+  	{
+    cout << "computer chose rock \n";
+    cout << "computer wins\n";
+    cout << "(and ur gay)\n";
+  	}
+  else if (user == 2 && computer == 3)
+  	{
+    cout << "computer chose scissor \n";
+    cout << "user wins\n";
+  	}
+   //**************************************************** user picks scissor
+  else if (user == 3 && computer == 1)
+  	{
+    cout << "computer chose rock \n";
+    cout << "computer wins\n";
+    cout << "(and ur gay)\n";
+  	}
+  else if (user == 3 && computer == 2)
+  	{
+    cout << "computer chose paper \n";
+    cout << "user wins\n";
+   	}	
+  }
+}
